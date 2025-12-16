@@ -8,6 +8,7 @@ Aspect Skills Portal is a scalable Angular-based web application designed for ma
 - SCSS
 - HTML5
 - Angular CLI
+- Bootstrap
 
 ## Styling Choice:- SCSS
 SCSS is selected over plain CSS because it provides better maintainability, modular styling, nesting, and variable support, making it suitable for large enterprise-level Angular applications.
