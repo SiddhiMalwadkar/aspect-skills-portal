@@ -1,59 +1,21 @@
-# AspectSkillsPortal
+# Aspect Skills Portal
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
+## Project Vision
+Aspect Skills Portal is a scalable Angular-based web application designed for managing skill-based courses, enquiries, placements, and admin operations using a clean, modular architecture.
 
-## Development server
+## Tech Stack
+- Angular 21
+- SCSS
+- HTML5
+- Node.js
+- Angular CLI
 
-To start a local development server, run:
+## Styling Choice:- SCSS
+SCSS is selected over plain CSS because it provides better maintainability, modular styling, nesting, and variable support, making it suitable for large enterprise-level Angular applications.
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Project Architecture
+- Core Module for app-wide services, guards, and interceptors
+- Shared Module for reusable components, directives, and pipes
+- Feature Modules for domain-based functionality
+- Layout Modules for main and admin layouts
+- Environment-based configuration support
