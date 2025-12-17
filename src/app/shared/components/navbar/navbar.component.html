@@ -1,0 +1,107 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="assets/icons/logo.jpeg" alt="Logo" class="logo-img">
+  <span class="brand-text">Aspect Skills</span>
+</a>
+
+      <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home">Home</a>
+        </li>
+<li class="nav-item courses-wrapper">
+  <a class="nav-link" (click)="toggleCourses($event)">Courses</a>
+
+  @if (showCourses) {
+    <div class="courses-panel" (click)="$event.stopPropagation()">
+
+      <!-- MAIN LIST -->
+      <div class="course-main" (click)="toggleSection('job')">
+        100% Job Assurance
+      </div>
+      @if (openSection === 'job') {
+        <div class="course-sub">
+          <div>xPro – Full Stack Dev with AI</div>
+          <div>testPro – Automation Testing</div>
+        </div>
+      }
+
+      <div class="course-main" (click)="toggleSection('master')">
+        Master Diploma (6 Months)
+      </div>
+      @if (openSection === 'master') {
+        <div class="course-sub">
+          <div>Java Full Stack</div>
+          <div>.Net Full Stack</div>
+          <div>Software Testing</div>
+          <div>P-DAC</div>
+        </div>
+      }
+
+      <div class="course-main" (click)="toggleSection('advanced')">
+        Advanced Diploma (4 Months)
+      </div>
+      @if (openSection === 'advanced') {
+        <div class="course-sub">
+          <div>Python Full Stack</div>
+          <div>Java Full Stack</div>
+          <div>Dot Net Full Stack</div>
+        </div>
+      }
+
+      <div class="course-main" (click)="toggleSection('diploma')">
+        Diploma (2 Months)
+      </div>
+      @if (openSection === 'diploma') {
+        <div class="course-sub">
+          <div>UI/UX Design</div>
+          <div class="highlight">Data Science</div>
+          <div>PHP</div>
+          <div>Salesforce</div>
+        </div>
+      }
+
+      <div class="course-main" (click)="toggleSection('short')">
+        Short Term Courses
+      </div>
+      @if (openSection === 'short') {
+        <div class="course-sub">
+          <div>C / C++</div>
+          <div>Core Java</div>
+          <div>HTML / CSS / Bootstrap</div>
+          <div>Angular / React</div>
+          <div>AWS / DevOps</div>
+          <div>Power BI</div>
+        </div>
+      }
+
+    </div>
+  }
+</li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/placements">Placements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

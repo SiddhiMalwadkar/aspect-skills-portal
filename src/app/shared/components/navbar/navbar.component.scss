@@ -1,0 +1,38 @@
+.custom-navbar{
+    background-color: #114171;
+    padding: 0.8rem 1.5rem;
+}
+.brand-text{
+    color:#ffffff;
+    font-weight: 600;
+    font-size:1.2rem;
+}
+.logo {
+  height: 40px;
+  width: auto; // keep aspect ratio
+  display: inline-block;
+}
+.logo-img {
+  height: 130px;   /* change as needed */
+  width: auto;    /* keeps aspect ratio */
+}
+
+.brand-text {
+  margin-left: 12px;        /* space between logo & text */
+  font-size: 28px;          /* increase/decrease if needed */
+  font-weight: 600;
+  color: #ffffff;           /* white text */
+  white-space: nowrap;      /* prevents wrapping */
+}
+
+
+.nav-link{
+    color:#ffffff;
+    margin-left:1rem;
+    font-weight:500;
+    transition:color 0.3s ease;
+
+}
+.nav-link:hover{
+    color:#0a345e;
+}

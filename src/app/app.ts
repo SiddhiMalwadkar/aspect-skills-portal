@@ -1,12 +1,5 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
-@Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
-})
+// This file previously defined a duplicate `app-root` component.
+// It's been converted to a plain class to avoid duplicate selector/template compilation.
 export class App {
-  protected readonly title = signal('aspect-skills-portal');
+  protected readonly title = 'aspect-skills-portal';
 }
